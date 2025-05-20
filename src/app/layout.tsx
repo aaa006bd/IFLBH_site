@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning={true} data-qb-installed="true">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${merriweather.className} antialiase cz-shortcut-listen="true"`}
+        className={`${geistSans.variable} ${geistMono.variable} ${merriweather.className} antialiase`}
       >
         <Navbar />
         {children}

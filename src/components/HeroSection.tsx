@@ -1,4 +1,10 @@
+"use client";
+import { useEffect } from "react";
+
 const HeroSection = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <section
@@ -8,7 +14,6 @@ const HeroSection = () => {
       {/* Background image with zoom animation */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-zoom-in"
-
         style={{
           backgroundImage: `url('/woman-tailor-working-leather-fabric.jpg')`,
         }}

@@ -46,7 +46,7 @@ const Navbar = () => {
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
-              className={`font-medium hover:bg-[#CC5500] hover:text-white rounded-lg transition-all duration-200 ease-in-out px-4 py-1 ${
+              className={`font-medium hover:bg-[#CC5500] hover:text-white rounded-md transition-all duration-200 ease-in-out px-4 py-1 ${
                 isScrolled ? "" : "text-white"
               }`}
             >

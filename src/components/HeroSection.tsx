@@ -29,7 +29,7 @@ const HeroSection = () => {
             Premium Leather <br className="hidden sm:block" /> Crafted to
             Perfection
           </h1>
-          <p className="text-md md:text-lg mb-8 max-w-2xl mx-auto opacity-90 text-[var(--accent-secondary-color)] animate__animated animate__fadeIn animate__delay-2s">
+          <p className="text-md md:text-lg mb-8 max-w-2xl mx-auto opacity-90 text-[var(--accent-secondary-color)] animate__animated animate__fadeIn animate__delay-1s">
             Bangladeshs premier leather distributor, providing exceptional
             quality for over two decades.
           </p>

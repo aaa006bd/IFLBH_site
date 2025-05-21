@@ -8,6 +8,8 @@ export default function Home() {
     <div>
       <HeroSection />
       <AboutSection />
+      <hr className="border-t-1 border-gray-300 my-8 w-[60%] mx-auto" />
+
       <ProductsSection />
       <Footer />
     </div>

@@ -30,7 +30,7 @@ export default function ProductCard({
       </div>
 
       {/* Content on Right */}
-      <div className="flex flex-col justify-between w-full md:w-1/2">
+      <div className="flex flex-col justify-between w-full md:w-1/2 text-left">
         <div>
           <h3 className="text-xl font-bold mb-3 text-leather-brown">{title}</h3>
           <p className="mb-4 text-gray-700">{description}</p>

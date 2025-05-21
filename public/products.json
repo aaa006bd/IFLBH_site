@@ -1,0 +1,93 @@
+[
+  {
+    "title": "Crust Leather",
+    "description": "Our crust leather is available in various tanning processes.",
+    "image": "https://img.freepik.com/free-photo/leahter-textured-background_53876-42048.jpg?ga=GA1.1.808174805.1747627982&semt=ais_hybrid&w=740",
+    "types": [
+      {
+        "name": "Full Chrome",
+        "detail": "Offers excellent dye uptake and softness, ideal for fashion accessories."
+      },
+      {
+        "name": "Semi-Chrome",
+        "detail": "Balances durability and softness, suitable for a wide range of applications."
+      },
+      {
+        "name": "Full Vegetable",
+        "detail": "Tanned using natural tannins, providing a rich patina over time."
+      },
+      {
+        "name": "Chrome-Free",
+        "detail": "Environmentally friendly option, free from harmful chemicals."
+      }
+    ],
+    "idealFor": "Footwear, handbags, garments"
+  },
+  {
+    "title": "Finished Leather",
+    "description": "Our finished leather comes in a variety of textures and appearances.",
+    "image": "https://img.freepik.com/free-photo/leahter-textured-background_53876-42048.jpg?ga=GA1.1.808174805.1747627982&semt=ais_hybrid&w=740",
+    "types": [
+      {
+        "name": "Polished",
+        "detail": "Smooth and glossy finish for a sleek look."
+      },
+      {
+        "name": "Burnished",
+        "detail": "Edges are smoothed and sealed, enhancing durability."
+      },
+      {
+        "name": "Pigmented",
+        "detail": "Uniform color with a protective coating."
+      },
+      {
+        "name": "Aniline",
+        "detail": "Transparent finish that showcases the natural grain."
+      },
+      {
+        "name": "Semi-Aniline",
+        "detail": "A blend of aniline and pigmented finishes, offering a balance between natural appearance and durability."
+      },
+      {
+        "name": "Nubuck",
+        "detail": "Soft, velvety surface achieved by sanding the grain side."
+      }
+    ],
+    "idealFor": "High-end fashion items and accessories"
+  },
+  {
+    "title": "Split Leather",
+    "description": "Available in the wet blue stage, our split leather is suitable for:",
+    "image": "https://img.freepik.com/free-photo/leahter-textured-background_53876-42048.jpg?ga=GA1.1.808174805.1747627982&semt=ais_hybrid&w=740",
+    "types": [
+      {
+        "name": "Upholstery",
+        "detail": "Durable and comfortable for furniture applications."
+      },
+      {
+        "name": "Industrial Uses",
+        "detail": "Robust material for various industrial products."
+      }
+    ]
+  },
+  {
+    "title": "Lining and Upper Leather",
+    "description": "Tailored for specific applications in footwear and accessories, our lining and upper leather offer:",
+    "image": "https://img.freepik.com/free-photo/leahter-textured-background_53876-42048.jpg?ga=GA1.1.808174805.1747627982&semt=ais_hybrid&w=740",
+    "types": [
+      {
+        "name": "Breathability",
+        "detail": "Ensures comfort for the wearer."
+      },
+      {
+        "name": "Durability",
+        "detail": "Withstands the rigors of daily use."
+      },
+      {
+        "name": "Aesthetic Appeal",
+        "detail": "Complements the overall design of the product."
+      }
+    ]
+  }
+]
+

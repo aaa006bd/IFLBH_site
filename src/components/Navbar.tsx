@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
@@ -34,9 +35,13 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
-        <div className="flex items-center animate__animated animate__fadeInLeft">
-          <a href="#" className="text-2xl font-bold text-leather-brown">
-            LeatherBD
+        <div className="flex items-center animate__animated animate__fadeInLeft gap-5">
+          <img src="/Logo.png" alt="" className="w-12 h-12"/>
+          <a href="#" className={`text-2xl lg:hidden md:block font-bold text-leather-brown ${isScrolled ? "text-gray-900" : "text-white"}`}>
+          IFLBH
+          </a>
+          <a href="#" className="text-2xl hidden lg:block font-bold text-leather-brown">
+          Innovative Footwear & Leather House
           </a>
         </div>
 

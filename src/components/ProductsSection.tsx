@@ -37,7 +37,7 @@ export default function ProductsSection() {
           precision and care.
         </p>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 gap-8">
           {products?.map((product, index) => (
             <ProductCard
               key={index}

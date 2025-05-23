@@ -11,7 +11,7 @@ const AboutSection = () => {
   return (
     <section
       id="about"
-      className="bg-gradient-to-b from-[var(--accent-secondary-color)] to-transparent min-h-[calc(100vh-80px)] flex items-center"
+      className="bg-gradient-to-b from-[var(--accent-secondary-color)] to-transparent min-h-[calc(100vh-80px)] flex items-center py-32"
     >
       <div
         className="container mx-auto px-4 md:px-6"

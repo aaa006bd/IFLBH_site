@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "title": "Crust Leather",
     "description": "Our crust leather is available in various tanning processes.",
     "image": "https://img.freepik.com/free-photo/leahter-textured-background_53876-42048.jpg?ga=GA1.1.808174805.1747627982&semt=ais_hybrid&w=740",
@@ -24,6 +25,7 @@
     "idealFor": "Footwear, handbags, garments"
   },
   {
+    "id": 2,
     "title": "Finished Leather",
     "description": "Our finished leather comes in a variety of textures and appearances.",
     "image": "https://img.freepik.com/free-photo/leahter-textured-background_53876-42048.jpg?ga=GA1.1.808174805.1747627982&semt=ais_hybrid&w=740",
@@ -56,6 +58,7 @@
     "idealFor": "High-end fashion items and accessories"
   },
   {
+    "id": 3,
     "title": "Split Leather",
     "description": "Available in the wet blue stage, our split leather is suitable for:",
     "image": "https://img.freepik.com/free-photo/leahter-textured-background_53876-42048.jpg?ga=GA1.1.808174805.1747627982&semt=ais_hybrid&w=740",
@@ -71,6 +74,7 @@
     ]
   },
   {
+    "id": 4,
     "title": "Lining and Upper Leather",
     "description": "Tailored for specific applications in footwear and accessories, our lining and upper leather offer:",
     "image": "https://img.freepik.com/free-photo/leahter-textured-background_53876-42048.jpg?ga=GA1.1.808174805.1747627982&semt=ais_hybrid&w=740",

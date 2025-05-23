@@ -1,8 +1,10 @@
 "use client";
 import ProductCard from "@/components/Ui/ProductCard";
 import { useEffect, useState } from "react";
+import Modal from "./Ui/Modal";
 
 interface Product {
+  id: number;
   title: string;
   description: string;
   types: [];
@@ -12,6 +14,8 @@ interface Product {
 
 export default function ProductsSection() {
   const [products, setProducts] = useState<Product[]>([]);
+  const [modal, setModal] = useState<boolean | undefined>(false);
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
   useEffect(() => {
     fetch("products.json")
@@ -21,12 +25,21 @@ export default function ProductsSection() {
       });
   }, []);
 
+  const handleToggleModal = (product: Product) => {
+    setSelectedProduct(product);
+    setModal(true);
+  };
+
   return (
     <section
       id="products"
       className="py-32 bg-leather-ivory min-h-[calc(100vh-80px)] flex items-center"
     >
-      <div className="relative text-center mb-24 container mx-auto px-4 md:px-6">
+      <div
+        className="relative text-center mb-24 container mx-auto px-4 md:px-6"
+        data-aos="fade-up"
+        data-aos-easing="ease-in-sine"
+      >
         <h2 className="text-3xl md:text-5xl font-bold text-[var(--text-color)] relative inline-block">
           Our Products
           {/* Green underline */}
@@ -41,15 +54,23 @@ export default function ProductsSection() {
           {products?.map((product, index) => (
             <ProductCard
               key={index}
+              id={product.id}
               title={product.title}
               description={product.description}
-              types={product.types}
               idealFor={product.idealFor}
-              imageUrl={product.image} // optional: only if your ProductCard handles images
+              imageUrl={product.image}
+              toggleModal={() => handleToggleModal(product)}
             />
           ))}
         </div>
       </div>
+      {modal && selectedProduct && (
+        <Modal
+          closeModal={() => setModal(false)}
+          modalState={modal}
+          product={selectedProduct}
+        />
+      )}
     </section>
   );
 }

@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex items-center justify-center text-center">
           {/* Logo and Description */}
           <div>
-            <h3 className="text-2xl font-bold mb-3 text-white">LeatherBD</h3>
+            <h3 className="text-2xl font-bold mb-3 text-white">Innovative Footwear & Leather House</h3>
             <p className="text-gray-200 mb-8 md:w-[70%] mx-auto">
               Bangladeshs premier leather distributor, providing exceptional
               quality leather products since 2001.
@@ -222,7 +222,7 @@ const Footer = () => {
 
         <div className="mt-12 border-t border-leather-ivory/20 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-300 text-sm">
-            © {currentYear} LeatherBD. All rights reserved.
+            © {currentYear} IFLBH. All rights reserved.
           </p>
 
           <div className="mt-4 md:mt-0">

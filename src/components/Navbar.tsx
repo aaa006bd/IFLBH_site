@@ -30,11 +30,11 @@ const Navbar = () => {
       className={`fixed w-full transition-all duration-300 ${
         isScrolled
           ? "bg-white/50 backdrop-blur-lg py-2 shadow-md z-50"
-          : "bg-leather-ivory backdrop-blur-md py-4 md:py-1 z-50"
+          : "bg-leather-ivory py-4 md:py-1 z-50"
       }`}
     >
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
-        <div className="flex items-center">
+        <div className="flex items-center animate__animated animate__fadeInLeft">
           <a href="#" className="text-2xl font-bold text-leather-brown">
             LeatherBD
           </a>
@@ -46,7 +46,7 @@ const Navbar = () => {
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
-              className={`font-medium hover:bg-[#CC5500] hover:text-white rounded-lg transition-all duration-200 ease-in-out px-4 py-1 ${
+              className={`font-medium hover:bg-[#CC5500] hover:text-white rounded-md transition-all duration-200 ease-in-out px-4 py-1 ${
                 isScrolled ? "" : "text-white"
               }`}
             >

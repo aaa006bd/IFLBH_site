@@ -33,7 +33,7 @@ export default function ProductsSection() {
   return (
     <section
       id="products"
-      className="py-32 bg-leather-ivory min-h-[calc(100vh-80px)] flex items-center"
+      className="lg:py-32 bg-leather-ivory min-h-[calc(100vh-80px)] flex items-center"
     >
       <div
         className="relative text-center mb-24 container mx-auto px-4 md:px-6"

@@ -1,4 +1,5 @@
 import AboutSection from "@/components/AboutSection";
+import ContactUs from "@/components/ContactUs";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import ProductsSection from "@/components/ProductsSection";
@@ -15,6 +16,10 @@ export default function Home() {
       <hr className="border-t-1 border-gray-300 lg:pt-32 pb-5 w-[60%] mx-auto" />
 
       <SustainabilitySection />
+
+      <hr className="border-t-1 border-gray-300 lg:pt-32 pb-5 w-[60%] mx-auto" />
+
+      <ContactUs />
       <Footer />
     </div>
   );

@@ -19,7 +19,7 @@ const AboutSection = () => {
         data-aos-easing="ease-in-sine"
       >
         <div className="relative text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-[var(--text-color)] relative inline-block">
+          <h2 className="text-3xl md:text-5xl font-bold text-stone-800 relative inline-block">
             About Us
             {/* Green underline */}
             <span className="absolute left-1/2 -translate-x-20 bottom-1 bg-green-400 w-48 h-4 -z-10 rounded-xs" />

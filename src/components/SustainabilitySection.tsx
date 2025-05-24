@@ -44,6 +44,9 @@ const SustainabilitySection = () => {
               <div
                 key={index}
                 className="group bg-white/70 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-stone-200/50"
+                data-aos="zoom-in"
+                data-aos-easing="linear"
+                data-aos-duration="800"
               >
                 <div className="flex flex-col items-center text-center">
                   {/* Icon Container */}

@@ -12,7 +12,7 @@ export default function Home() {
       <hr className="border-t-1 border-gray-300 my-8 w-[60%] mx-auto" />
 
       <ProductsSection />
-      <hr className="border-t-1 border-gray-300 my-8 w-[60%] mx-auto" />
+      <hr className="border-t-1 border-gray-300 lg:pt-32 pb-5 w-[60%] mx-auto" />
 
       <SustainabilitySection />
       <Footer />

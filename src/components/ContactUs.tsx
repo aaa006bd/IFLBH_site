@@ -1,10 +1,10 @@
-import { Phone, Mail, MessageSquare } from "lucide-react";
+import { Phone, Mail, MessageSquare, Factory } from "lucide-react";
 
 const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="bg-gradient-to-br from-amber-100 via-stone-50 to-green-100 min-h-screen flex items-center justify-center "
+      className="bg-gradient-to-br from-gray-100 via-stone-50 to-green-100 min-h-screen flex items-center justify-center "
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
@@ -20,7 +20,7 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="flex items-center justify-evenly">
+        <div className="grid grid-cols-4 border *:border">
           <div className="flex items-start gap-4">
             <div className="bg-leather-tan p-3 rounded-full">
               <Phone className="text-leather-brown" size={24} />
@@ -29,7 +29,8 @@ const ContactSection = () => {
               <h3 className="text-xl font-semibold text-leather-ivory">
                 Phone
               </h3>
-              <p className="text-leather-ivory/80">+880 1713 246897</p>
+              <p className="text-leather-ivory/80 mt-1">+88 01917-601389</p>
+              <p className="text-leather-ivory/80">+88 01675-028292</p>
             </div>
           </div>
 
@@ -41,7 +42,9 @@ const ContactSection = () => {
               <h3 className="text-xl font-semibold text-leather-ivory">
                 Email
               </h3>
-              <p className="text-leather-ivory/80 mt-1">info@leatherbd.com</p>
+              <p className="text-leather-ivory/80 mt-1">
+                inovativeleather@gmail.com
+              </p>
             </div>
           </div>
 
@@ -54,9 +57,23 @@ const ContactSection = () => {
                 Office
               </h3>
               <p className="text-leather-ivory/80 mt-1">
-                97 Gulshan Avenue, Suite 403
+                44/4, Zigatola Glass Factory, Hazaribagh
                 <br />
-                Dhaka 1212, Bangladesh
+                Dhaka 1209, Bangladesh
+              </p>
+            </div>
+          </div>
+          <div className="flex items-start gap-4">
+            <div className="bg-leather-tan p-3 rounded-full">
+              <Factory className="text-leather-brown" size={24} />
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-leather-ivory">
+                Work Area
+              </h3>
+              <p className="text-leather-ivory/80 mt-1">
+                Tannery Industrial Estate <br />
+                Hemayetpur, Savar, Dhaka
               </p>
             </div>
           </div>

@@ -17,10 +17,10 @@ const ContactSection = () => {
           <p className="text-center text-lg sm:text-xl text-stone-600 mb-16 mt-10">
             Ready to source premium leather materials for your next project?
             Reach out to us:
-          </p>
+          </p>6
         </div>
 
-        <div className="grid grid-cols-4 border *:border">
+        <div className="grid md:grid-cols-4 border *:border">
           <div className="flex items-start gap-4">
             <div className="bg-leather-tan p-3 rounded-full">
               <Phone className="text-leather-brown" size={24} />

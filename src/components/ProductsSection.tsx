@@ -33,19 +33,17 @@ export default function ProductsSection() {
   return (
     <section
       id="products"
-      className="lg:pt-32 pb-5 bg-leather-ivory min-h-[calc(100vh-80px)] flex items-center"
+      className="lg:pt-32 bg-leather-ivory min-h-[calc(100vh-80px)] flex items-center"
     >
       <div
         className="relative text-center mb-24 container mx-auto px-4 md:px-6"
         data-aos="fade-up"
         data-aos-easing="ease-in-sine"
       >
-        <h2 className="text-3xl md:text-5xl font-bold text-stone-800 relative inline-block">
+        <h2 className="text-3xl md:text-5xl font-bold text-stone-800 relative inline-block underline">
           Our Products
-          {/* Green underline */}
-          <span className="absolute left-1/2 -translate-x-32 bottom-1 bg-green-400 w-72 h-4 -z-10 rounded-xs" />
         </h2>
-        <p className="text-center text-lg sm:text-xl text-stone-600 mb-16 mt-10">
+        <p className="text-center text-md md:text-xl text-stone-600 mb-8 md:mb-16 mt-5 md:mt-10">
           Explore our wide range of premium leather products, crafted with
           precision and care.
         </p>

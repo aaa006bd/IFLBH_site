@@ -19,10 +19,8 @@ const AboutSection = () => {
         data-aos-easing="ease-in-sine"
       >
         <div className="relative text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-stone-800 relative inline-block">
+          <h2 className="text-3xl md:text-5xl font-bold text-stone-800 relative inline-block  underline">
             About Us
-            {/* Green underline */}
-            <span className="absolute left-1/2 -translate-x-20 bottom-1 bg-green-400 w-48 h-4 -z-10 rounded-xs" />
           </h2>
         </div>
 
@@ -36,37 +34,39 @@ const AboutSection = () => {
             />
 
             {/* Green Outline Overlay */}
-            <div className="absolute inset-0 rounded-xl border-2 border-green-500 z-10 translate-x-2 translate-y-2 pointer-events-none" />
+            <div className="absolute inset-0 rounded-xl border-2 border-[#016533] z-10 translate-x-2 translate-y-2 pointer-events-none" />
           </div>
 
           <div className="space-y-6 stagger-fade-in">
             <h3 className="text-2xl font-semibold text-leather-brown">
-              Our Story
+              Crafting Excellence in Leather
             </h3>
             <p className="text-leather-charcoal leading-relaxed">
-              Founded in 2001, LeatherBD has been at the forefront of the
-              leather industry in Bangladesh. What started as a small family
-              business has grown into one of the most trusted names in leather
-              distribution across South Asia.
+              At Innovative Footwear & leather (BD) house, we specialize in
+              supplying a comprehensive range of premium finished and crust
+              leather, sourced from cow, goat, and buffalo hides. With a
+              deep-rooted passion for the art of leatherwork, we are dedicated
+              to delivering materials that meet the highest standards of quality
+              and craftsmanship.
             </p>
             <h3 className="text-2xl font-semibold text-leather-brown pt-4">
               Our Mission
             </h3>
             <p className="text-leather-charcoal leading-relaxed">
-              We strive to provide exceptional quality leather products that
-              meet international standards while supporting local artisans and
-              sustainable practices. Our commitment to excellence drives
-              everything we do.
+              Our mission is to provide top-tier leather materials that empower
+              our clients to create exceptional products. We are committed to
+              sustainability, ethical sourcing, and continuous innovation to
+              meet the evolving needs of the leather industry.
             </p>
-            <h3 className="text-2xl font-semibold text-leather-brown pt-4">
+            {/* <h3 className="text-2xl font-semibold text-leather-brown pt-4">
               Our Values
-            </h3>
-            <ul className="text-leather-charcoal leading-relaxed list-disc pl-5 space-y-2">
+            </h3> */}
+            {/* <ul className="text-leather-charcoal leading-relaxed list-disc pl-5 space-y-2">
               <li>Unwavering commitment to quality</li>
               <li>Ethical sourcing and sustainable practices</li>
               <li>Supporting local craftsmanship</li>
               <li>Building lasting relationships with our partners</li>
-            </ul>
+            </ul> */}
           </div>
         </div>
       </div>

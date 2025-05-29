@@ -1,83 +1,85 @@
-import { Phone, Mail, MessageSquare, Factory } from "lucide-react";
+"use client";
+import { Phone, Mail, Factory, MapPin } from "lucide-react";
+import { useEffect, useState } from "react";
+
+type Contact = {
+  symbol: keyof typeof iconMap;
+  type: string;
+  values: string[];
+};
+
+const iconMap = {
+  Phone,
+  Mail,
+  Factory,
+  MapPin,
+};
 
 const ContactSection = () => {
+  const [contactInfo, setContactInfo] = useState<Contact[]>([]);
+
+  useEffect(() => {
+    const fetchContactInfo = async () => {
+      const response = await fetch("/contact.json");
+      const data = await response.json();
+      setContactInfo(data);
+    };
+    fetchContactInfo();
+  }, []);
+
   return (
     <section
       id="contact"
-      className="bg-gradient-to-br from-gray-100 via-stone-50 to-green-100 min-h-screen flex items-center justify-center "
+      className="bg-gradient-to-br from-white-100 via-stone-50 to-emerald-100-100 min-h-screen flex items-center justify-center mb-24"
     >
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center mb-16">
+      <div
+        className="container mx-auto px-4 md:px-6"
+        data-aos="fade-up"
+        data-aos-easing="ease-in-sine"
+      >
+        <div className="text-center mb-8">
           <h2 className="text-3xl md:text-5xl font-bold text-stone-800 relative inline-block">
             Contact Us
-            {/* Green underline */}
-            <span className="absolute left-1/2 -translate-x-32 bottom-1 bg-green-400 w-72 h-4 -z-10 rounded-xs" />
           </h2>
           <div className="w-20 h-1 bg-leather-tan mx-auto"></div>
           <p className="text-center text-lg sm:text-xl text-stone-600 mb-16 mt-10">
             Ready to source premium leather materials for your next project?
             Reach out to us:
-          </p>6
+          </p>
         </div>
 
-        <div className="grid md:grid-cols-4 border *:border">
-          <div className="flex items-start gap-4">
-            <div className="bg-leather-tan p-3 rounded-full">
-              <Phone className="text-leather-brown" size={24} />
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold text-leather-ivory">
-                Phone
-              </h3>
-              <p className="text-leather-ivory/80 mt-1">+88 01917-601389</p>
-              <p className="text-leather-ivory/80">+88 01675-028292</p>
-            </div>
-          </div>
+        <section className="w-full py-12 px-4 md:px-10 lg:px-20">
+          <div className="grid lg:grid-cols-4 gap-8 lg:gap-12">
+            {contactInfo.map((contact, index) => {
+              const Icon = iconMap[contact.symbol];
+              return (
+                <div
+                  key={index}
+                  className="group bg-white/70 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-stone-200/50"
+                  data-aos="zoom-in"
+                  data-aos-easing="linear"
+                  data-aos-duration="800"
+                >
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-16 h-16 mb-6 bg-gradient-to-br from-green-100 to-amber-100 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <Icon className="text-leather-brown" size={28} />
+                    </div>
 
-          <div className="flex items-start gap-4">
-            <div className="bg-leather-tan p-3 rounded-full">
-              <Mail className="text-leather-brown" size={24} />
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold text-leather-ivory">
-                Email
-              </h3>
-              <p className="text-leather-ivory/80 mt-1">
-                inovativeleather@gmail.com
-              </p>
-            </div>
-          </div>
+                    <h3 className="text-xl sm:text-2xl font-semibold text-stone-800 mb-4 group-hover:text-green-800 transition-colors duration-300">
+                      {contact.type}
+                    </h3>
 
-          <div className="flex items-start gap-4">
-            <div className="bg-leather-tan p-3 rounded-full">
-              <MessageSquare className="text-leather-brown" size={24} />
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold text-leather-ivory">
-                Office
-              </h3>
-              <p className="text-leather-ivory/80 mt-1">
-                44/4, Zigatola Glass Factory, Hazaribagh
-                <br />
-                Dhaka 1209, Bangladesh
-              </p>
-            </div>
+                    <div className="text-stone-600 leading-relaxed text-base sm:text-lg space-y-1">
+                      {contact.values.map((item, idx) => (
+                        <p key={idx}>{item}</p>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
-          <div className="flex items-start gap-4">
-            <div className="bg-leather-tan p-3 rounded-full">
-              <Factory className="text-leather-brown" size={24} />
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold text-leather-ivory">
-                Work Area
-              </h3>
-              <p className="text-leather-ivory/80 mt-1">
-                Tannery Industrial Estate <br />
-                Hemayetpur, Savar, Dhaka
-              </p>
-            </div>
-          </div>
-        </div>
+        </section>
       </div>
     </section>
   );

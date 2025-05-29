@@ -1,0 +1,25 @@
+[
+  {
+    "type": "Phone",
+    "symbol": "Phone",
+    "values": ["+88 01917-601389", "+88 01675-028292"]
+  },
+  {
+    "type": "Email",
+    "symbol": "Mail",
+    "values": ["inovativeleather@gmail.com"]
+  },
+  {
+    "type": "Office",
+    "symbol": "MapPin",
+    "values": [
+      "44/4, Zigatola Glass Factory, Hazaribagh",
+      "Dhaka 1209, Bangladesh"
+    ]
+  },
+  {
+    "type": "Work Area",
+    "symbol": "Factory",
+    "values": ["Tannery Industrial Estate", "Hemayetpur, Savar, Dhaka"]
+  }
+]

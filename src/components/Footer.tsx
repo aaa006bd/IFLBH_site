@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Logo and Description */}
           <div>
             <h3 className="text-2xl font-bold mb-3 text-white">Innovative Footwear & Leather House</h3>
-            <p className="text-gray-200 mb-8 md:w-[70%] mx-auto">
+            <p className="text-gray-300 mb-8 md:w-[70%] mx-auto text-md md:text-xl">
               Bangladeshs premier leather distributor, providing exceptional
               quality leather products since 2001.
             </p>

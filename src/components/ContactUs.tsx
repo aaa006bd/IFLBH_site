@@ -54,19 +54,21 @@ const ContactSection = () => {
               return (
                 <div
                   key={index}
-                  className="group bg-white/70 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-stone-200/50"
+                  className="group bg-white/70 backdrop-blur-sm rounded-2xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-stone-200/50"
                   data-aos="zoom-in"
                   data-aos-easing="linear"
                   data-aos-duration="800"
                 >
                   <div className="flex flex-col items-center text-center">
-                    <div className="w-16 h-16 mb-6 bg-gradient-to-br from-green-100 to-amber-100 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <Icon className="text-leather-brown" size={28} />
-                    </div>
+                    <div className="flex md:flex-col items-center justify-center gap-3">
+                      <div className="w-16 h-16 mb-6 bg-[#016533] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <Icon className="text-white" size={28} />
+                      </div>
 
-                    <h3 className="text-xl sm:text-2xl font-semibold text-stone-800 mb-4 group-hover:text-green-800 transition-colors duration-300">
-                      {contact.type}
-                    </h3>
+                      <h3 className="text-xl sm:text-2xl font-bold text-stone-800 mb-4 group-hover:text-green-800 transition-colors duration-300">
+                        {contact.type}
+                      </h3>
+                    </div>
 
                     <div className="text-stone-600 leading-relaxed text-base sm:text-lg space-y-1">
                       {contact.values.map((item, idx) => (

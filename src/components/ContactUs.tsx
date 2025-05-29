@@ -33,22 +33,21 @@ const ContactSection = () => {
       className="bg-gradient-to-br from-white-100 via-stone-50 to-emerald-100-100 min-h-screen flex items-center justify-center mb-24"
     >
       <div
-        className="container mx-auto px-4 md:px-6"
+        className="container mx-auto px-4 md:px-6 py-12 lg:py-32"
         data-aos="fade-up"
         data-aos-easing="ease-in-sine"
       >
-        <div className="text-center mb-8">
+        <div className="text-center mb-12">
           <h2 className="text-3xl md:text-5xl font-bold text-stone-800 relative inline-block">
             Contact Us
           </h2>
-          <div className="w-20 h-1 bg-leather-tan mx-auto"></div>
-          <p className="text-center text-lg sm:text-xl text-stone-600 mb-16 mt-10">
+          <p className="text-center text-md md:text-xl text-stone-600 mb-12 mt-8">
             Ready to source premium leather materials for your next project?
             Reach out to us:
           </p>
         </div>
 
-        <section className="w-full py-12 px-4 md:px-10 lg:px-20">
+        <section className="w-full md:py-12 px-4 md:px-10 lg:px-20">
           <div className="grid lg:grid-cols-4 gap-8 lg:gap-12">
             {contactInfo.map((contact, index) => {
               const Icon = iconMap[contact.symbol];

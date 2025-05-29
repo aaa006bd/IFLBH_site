@@ -37,7 +37,7 @@ const SustainabilitySection = () => {
             Our Commitment to
             <span className="block text-green-700 mt-2">Sustainability</span>
           </h2>
-          <p className="text-lg sm:text-xl text-stone-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-md md:text-xl text-stone-600 max-w-2xl mx-auto leading-relaxed">
             We are dedicated to providing eco-friendly and ethically produced
             leather goods. Our commitment includes:
           </p>

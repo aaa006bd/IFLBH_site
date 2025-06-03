@@ -19,7 +19,7 @@ html {
 /* Scroll indicator */
 .scrolldown {
   --color: white;
-  --sizeX: 30px;
+  --sizeX: 29px;
   --sizeY: 50px;
   width: var(--sizeX);
   height: var(--sizeY);

@@ -24,7 +24,7 @@ const AboutSection = () => {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-12 items-center  lg:w-[90%] mx-auto">
           <div className="relative h-[500px] rounded-xl shadow-xl">
             {/* Image */}
             <img

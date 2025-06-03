@@ -23,7 +23,7 @@ const SustainabilitySection = () => {
 
   return (
     <section
-      className="py-12 lg:py-32 px-4 mb-12 sm:px-6 lg:px-8 bg-gradient-to-br from-amber-50 via-stone-50 to-green-50"
+      className="py-12 lg:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-amber-50 via-stone-50 to-green-50"
       id="sustainability"
     >
       <div
@@ -37,7 +37,7 @@ const SustainabilitySection = () => {
             Our Commitment to
             <span className="block text-green-700 mt-2">Sustainability</span>
           </h2>
-          <p className="text-md md:text-xl text-stone-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-md md:text-xl text-stone-600 mx-auto leading-relaxed">
             We are dedicated to providing eco-friendly and ethically produced
             leather goods. Our commitment includes:
           </p>
@@ -50,7 +50,7 @@ const SustainabilitySection = () => {
             return (
               <div
                 key={index}
-                className="group bg-white/70 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-stone-200/50"
+                className="group bg-white/70 backdrop-blur-sm rounded-2xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-stone-200/50"
                 data-aos="zoom-in"
                 data-aos-easing="linear"
                 data-aos-duration="800"

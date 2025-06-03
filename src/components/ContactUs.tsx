@@ -30,10 +30,10 @@ const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="bg-gradient-to-br from-white-100 via-stone-50 to-emerald-100-100 min-h-screen flex items-center justify-center mb-24"
+      className="min-h-screen flex items-center justify-center"
     >
       <div
-        className="container mx-auto px-4 md:px-6 py-12 lg:py-32"
+        className=" mx-auto px-4 md:px-6 py-12 lg:py-32 rounded-xl drop-shadow-xl bg-green-300/50"
         data-aos="fade-up"
         data-aos-easing="ease-in-sine"
       >
@@ -48,29 +48,29 @@ const ContactSection = () => {
         </div>
 
         <section className="w-full md:py-12 px-4 md:px-10 lg:px-20">
-          <div className="grid lg:grid-cols-4 gap-8 lg:gap-12">
+          <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8 lg:gap-12">
             {contactInfo.map((contact, index) => {
               const Icon = iconMap[contact.symbol];
               return (
                 <div
                   key={index}
-                  className="group bg-white/70 backdrop-blur-sm rounded-2xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-stone-200/50"
+                  className="group bg-white/70 rounded-2xl p-5 shadow-lg overflow-hidden"
                   data-aos="zoom-in"
                   data-aos-easing="linear"
                   data-aos-duration="800"
                 >
-                  <div className="flex flex-col items-center text-center">
-                    <div className="flex md:flex-col items-center justify-center gap-3">
-                      <div className="w-16 h-16 mb-6 bg-[#016533] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <Icon className="text-white" size={28} />
+                  <div className="flex flex-col items-center text-center relative ">
+                    <div className="flex items-center justify-center lg:mb-5">
+                      <div className="xl:mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 absolute -left-7 -top-4 -z-10">
+                        <Icon className="text-[#016533]/10 drop-shadow-2xl" size={120} />
                       </div>
 
-                      <h3 className="text-xl sm:text-2xl font-bold text-stone-800 mb-4 group-hover:text-green-800 transition-colors duration-300">
+                      <h3 className="text-xl sm:text-2xl font-bold text-stone-800 group-hover:text-green-800 transition-colors duration-300">
                         {contact.type}
                       </h3>
                     </div>
 
-                    <div className="text-stone-600 leading-relaxed text-base sm:text-lg space-y-1">
+                    <div className="text-stone-600 leading-relaxed text-md space-y-1">
                       {contact.values.map((item, idx) => (
                         <p key={idx}>{item}</p>
                       ))}

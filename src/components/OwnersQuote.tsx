@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 
 const OwnersQuote = () => {
@@ -37,7 +38,18 @@ const OwnersQuote = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100 relative overflow-hidden">
+    <section className="py-20 bg-amber-50 relative ">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        className="absolute -top-12 md:-top-28 lg:-top-36 xl:-top-42"
+      >
+        <path
+          fill="#fffbeb"
+          fill-opacity="1"
+          d="M0,128L120,122.7C240,117,480,107,720,106.7C960,107,1200,117,1320,122.7L1440,128L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+        ></path>
+      </svg>
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">

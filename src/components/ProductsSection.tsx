@@ -2,6 +2,7 @@
 import ProductCard from "@/components/Ui/ProductCard";
 import { useEffect, useState } from "react";
 import Modal from "./Ui/Modal";
+import Heading from "./Ui/Heading";
 
 interface Product {
   id: number;
@@ -40,13 +41,11 @@ export default function ProductsSection() {
         data-aos="fade-up"
         data-aos-easing="ease-in-sine"
       >
-        <h2 className="text-3xl md:text-5xl font-bold text-stone-800 relative inline-block underline">
-          Our Products
-        </h2>
-        <p className="text-center text-md md:text-xl text-stone-600 mb-8 md:mb-16 mt-5 md:mt-10">
-          Explore our wide range of premium leather products, crafted with
-          precision and care.
-        </p>
+        <Heading
+          heading="Our Products"
+          shortDescription="Explore our wide range of premium leather products, crafted with
+          precision and care."
+        />
 
         <div className="grid lg:grid-cols-2 gap-8">
           {products?.map((product, index) => (

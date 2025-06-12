@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
+import Heading from "./Ui/Heading";
 
 /* eslint-disable @next/next/no-img-element */
 const AboutSection = () => {
@@ -18,11 +19,8 @@ const AboutSection = () => {
         data-aos="fade-up"
         data-aos-easing="ease-in-sine"
       >
-        <div className="relative text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-stone-800 relative inline-block  underline">
-            About Us
-          </h2>
-        </div>
+        {/* heading */}
+        <Heading heading="About Us" />
 
         <div className="grid md:grid-cols-2 gap-12 items-center  lg:w-[90%] mx-auto">
           <div className="relative h-[500px] rounded-xl shadow-xl">

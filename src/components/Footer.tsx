@@ -20,7 +20,7 @@ const Footer = () => {
           {/* Logo and Description */}
           <div>
             <h3 className="text-2xl font-bold mb-3 text-white">
-              Innovative Footwear & Leather House
+              Innovative Footwear & Leather BD House
             </h3>
             <p className="text-gray-300 mb-8 md:w-[70%] mx-auto text-lg">
               Bangladeshs premier leather distributor, providing exceptional

@@ -64,7 +64,7 @@ const Navbar = () => {
               isScrolled ? "text-gray-900" : "text-white"
             }`}
           >
-            Innovative Footwear & Leather House
+            Innovative Footwear & Leather BD House
           </a>
         </div>
 

@@ -53,14 +53,6 @@ const OwnersQuote = () => {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-block">
-            <h2 className="text-4xl md:text-4xl font-bold text-amber-900 tracking-tight">
-              Words From Our
-            </h2>
-            <h3 className="text-5xl lg:text-5xl font-bold bg-gradient-to-r from-amber-800 via-orange-700 to-amber-900 bg-clip-text text-transparent mt-2">
-              Owners
-            </h3>
-          </div>
           <p className="text-lg text-amber-700 mt-6 max-w-2xl mx-auto leading-relaxed">
             Meet the visionaries behind our legacy of premium leather
             craftsmanship

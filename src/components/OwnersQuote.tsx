@@ -69,14 +69,6 @@ const OwnersQuote = () => {
 
               {/* Card Content */}
               <div className="relative p-8">
-                {/* Quote */}
-                <div className="mb-8">
-                  <div className="text-6xl text-amber-600/20 font-serif leading-none mb-4"></div>
-                  <blockquote className="text-lg text-gray-700 leading-relaxed italic font-light">
-                    {owner.quote}
-                  </blockquote>
-                </div>
-
                 {/* Owner Info */}
                 <div className="flex items-center">
                   <div className="relative">

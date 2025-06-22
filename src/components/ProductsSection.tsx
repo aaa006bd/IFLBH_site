@@ -19,7 +19,7 @@ export default function ProductsSection() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
   useEffect(() => {
-    fetch("products.json")
+    fetch("/JSON/products.json")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);

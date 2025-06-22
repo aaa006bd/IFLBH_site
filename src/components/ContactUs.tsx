@@ -21,7 +21,7 @@ const ContactSection = () => {
 
   useEffect(() => {
     const fetchContactInfo = async () => {
-      const response = await fetch("/contact.json");
+      const response = await fetch("/JSON/contact.json");
       const data = await response.json();
       setContactInfo(data);
     };

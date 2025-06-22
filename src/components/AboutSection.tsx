@@ -26,8 +26,7 @@ const AboutSection = () => {
           <div className="relative h-[500px] rounded-xl shadow-xl">
             {/* Image */}
             <img
-              src="https://img.freepik.com/free-photo/man-studio-creates-leather-ware_1157-33221.jpg?ga=GA1.1.808174805.1747627982&semt=ais_hybrid&w=740"
-              alt="Leather craftsman at work"
+              src="/section images/About Us.jpg"
               className="w-full h-full object-cover rounded-xl drop-shadow-2xl"
             />
 

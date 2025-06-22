@@ -17,11 +17,11 @@ const HeroSection = () => {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-zoom-in"
           style={{
-            backgroundImage: `url('/woman-tailor-working-leather-fabric.jpg')`,
+            backgroundImage: `url('/section images/Banner.jpg')`,
           }}
         >
           {/* Overlay for better text readability */}
-          <div className="absolute inset-0 "></div>
+          <div className="absolute inset-0 bg-black/20"></div>
         </div>
 
         <div className="relative mx-auto px-2 md:px-4 z-10 text-center py-9 rounded-xl backdrop-blur-xs lg:backdrop-blur-xs lg:bg-black/20">

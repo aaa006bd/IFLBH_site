@@ -30,7 +30,7 @@ export default function ProductCard({
         <img
           src={imageUrl}
           alt={title}
-          className="object-cover w-full rounded-xl"
+          className="object-contain w-full rounded-xl"
         />
         <div className="absolute bottom-0 left-0 right-0 flex items-center pl-3 rounded-b-xl bg-white opacity-100 group-hover:opacity-90 transition-opacity duration-200 ease-in-out">
           <h3 className="text-xl md:text-2xl font-bold text-leather-brown text-left py-4 ">
@@ -38,12 +38,12 @@ export default function ProductCard({
           </h3>
         </div>
 
-        <div className="absolute top-0 bottom-0 left-0 right-0 rounded-xl py-4 bg-black/60 backdrop-blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+        <div className="absolute top-0 bottom-0 left-0 right-0 rounded-xl py-4 bg-black/20 backdrop-blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
           {/* Content on Right */}
           <div className="h-full flex items-center justify-center">
             <button
               onClick={toggleModal}
-              className="flex items-center justify-center gap-3 text-xl text-white hover:text-[#2e0707] border px-6 py-3 rounded-xl bg-[var(--accent-color)]/0 hover:bg-[var(--accent-color)]/100 transition-colors duration-200"
+              className="flex items-center justify-center gap-3 text-xl text-white hover:text-[#2e0707] px-6 py-3 rounded-xl bg-[var(--accent-color)]/0 hover:bg-[var(--accent-color)]/100 transition-colors duration-200"
             >
               <span className="-rotate-y-180 text-3xl">
                 <LuMousePointerClick />

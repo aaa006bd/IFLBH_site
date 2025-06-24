@@ -37,7 +37,7 @@ export default function ProductsSection() {
       className="lg:pt-32 bg-leather-ivory min-h-[calc(100vh-80px)] flex items-center lg:w-[70%] mx-auto"
     >
       <div
-        className="relative text-center mb-24 container mx-auto px-4 md:px-6"
+        className="relative text-center mb-24 lg:container mx-auto px-4 md:px-6"
         data-aos="fade-up"
         data-aos-easing="ease-in-sine"
       >
@@ -47,7 +47,7 @@ export default function ProductsSection() {
           precision and care."
         />
 
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {products?.map((product, index) => (
             <ProductCard
               key={index}

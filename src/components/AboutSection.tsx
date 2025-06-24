@@ -15,14 +15,14 @@ const AboutSection = () => {
       className="bg-gradient-to-b from-[var(--accent-secondary-color)] to-transparent min-h-[calc(100vh-80px)] flex items-center py-32"
     >
       <div
-        className="container mx-auto px-4 md:px-6"
+        className="lg:container mx-auto px-4 md:px-6"
         data-aos="fade-up"
         data-aos-easing="ease-in-sine"
       >
         {/* heading */}
         <Heading heading="About Us" />
 
-        <div className="grid md:grid-cols-2 gap-12 items-center  lg:w-[90%] mx-auto">
+        <div className="grid md:grid-cols-2 gap-12 items-center lg:w-[90%] mx-auto">
           <div className="relative h-[500px] rounded-xl shadow-xl">
             {/* Image */}
             <img

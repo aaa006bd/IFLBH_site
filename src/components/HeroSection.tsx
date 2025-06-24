@@ -1,11 +1,11 @@
 "use client";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import "animate.css";
 
 const HeroSection = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   return (
     <section
@@ -35,14 +35,8 @@ const HeroSection = () => {
           </p>
         </div>
       </div>
-      <div
-        className="scrolldown absolute bottom-5"
-        style={{ "--color": "skyblue" } as React.CSSProperties}
-      >
-        <div className="chevrons">
-          <div className="chevrondown"></div>
-          <div className="chevrondown"></div>
-        </div>
+      <div className="scrolldown absolute bottom-5">
+        {/* <div className="section"></div> */}
       </div>
     </section>
   );

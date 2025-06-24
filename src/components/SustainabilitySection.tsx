@@ -35,7 +35,7 @@ const SustainabilitySection = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-stone-800 mb-6 tracking-tight">
             Our Commitment to
-            <span className="block text-green-700 mt-2 text-5xl">Sustainability</span>
+            <span className="block text-green-700 mt-2 md:text-5xl">Sustainability</span>
           </h2>
           <p className="text-lg text-stone-600 mx-auto leading-relaxed">
             We are dedicated to providing eco-friendly and ethically produced

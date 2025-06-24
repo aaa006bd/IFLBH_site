@@ -2,6 +2,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Boldonse&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
 
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+
 html {
   scroll-behavior: smooth;
 }
@@ -14,7 +18,6 @@ html {
   --background-color: #333;
   --text-color: #2e0707;
 }
-
 
 /* Scroll indicator */
 .scrolldown {
@@ -68,41 +71,30 @@ html {
   }
 }
 
-.chevrons {
-  padding: 6px 0 0 0;
-  margin-left: -3px;
-  margin-top: 48px;
-  width: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.chevrondown {
-  margin-top: -6px;
+.section {
   position: relative;
-  border: solid var(--color);
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  transform: rotate(45deg);
+  width: 100%;
 }
 
-.chevrondown:nth-child(odd) {
-  animation: pulse54012 500ms ease infinite alternate;
+.section::before {
+  animation: bounce 1s ease infinite;
+  bottom: 2rem;
+  color: #fff;
+  content: "╲╱";
+  font-size: 2rem;
+  height: 4rem;
+  left: 50%;
+  letter-spacing: -1px;
+  line-height: 4rem;
+  margin-left: -3rem;
+  opacity: 0.8;
+  position: absolute;
+  text-align: center;
+  width: 6rem;
 }
 
-.chevrondown:nth-child(even) {
-  animation: pulse54012 500ms ease infinite alternate 250ms;
-}
-
-@keyframes pulse54012 {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 0.5;
+@keyframes bounce {
+  50% {
+    transform: translateY(-50%);
   }
 }

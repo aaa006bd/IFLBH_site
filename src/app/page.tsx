@@ -6,10 +6,12 @@ import OwnersQuote from "@/components/OwnersQuote";
 import ProductsSection from "@/components/ProductsSection";
 import SustainabilitySection from "@/components/SustainabilitySection";
 import GallerySlider from "@/components/GallerySlider";
+import PageLoader from "@/components/PageLoader";
 
 export default function Home() {
   return (
     <div>
+      <PageLoader/>
       <HeroSection />
       <AboutSection />
       <ProductsSection />

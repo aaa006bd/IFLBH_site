@@ -38,7 +38,7 @@ const AboutSection = () => {
             <h3 className="text-2xl font-semibold text-leather-brown">
               Crafting Excellence in Leather
             </h3>
-            <p className="text-leather-charcoal leading-relaxed">
+            <p className="text-gray-600 leading-relaxed">
               At Innovative Footwear & leather (BD) house, we specialize in
               supplying a comprehensive range of premium finished and crust
               leather, sourced from cow, goat, and buffalo hides. With a
@@ -49,7 +49,7 @@ const AboutSection = () => {
             <h3 className="text-2xl font-semibold text-leather-brown pt-4">
               Our Mission
             </h3>
-            <p className="text-leather-charcoal leading-relaxed">
+            <p className="text-gray-600 leading-relaxed">
               Our mission is to provide top-tier leather materials that empower
               our clients to create exceptional products. We are committed to
               sustainability, ethical sourcing, and continuous innovation to

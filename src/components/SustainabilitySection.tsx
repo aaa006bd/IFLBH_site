@@ -37,7 +37,7 @@ const SustainabilitySection = () => {
             Our Commitment to
             <span className="block text-green-700 mt-2 md:text-5xl">Sustainability</span>
           </h2>
-          <p className="text-lg text-stone-600 mx-auto leading-relaxed">
+          <p className="lg:text-lg text-stone-600 mx-auto leading-relaxed">
             We are dedicated to providing eco-friendly and ethically produced
             leather goods. Our commitment includes:
           </p>
@@ -83,7 +83,7 @@ const SustainabilitySection = () => {
         <div className="mt-16 text-center">
           <div className="inline-flex items-center gap-2 px-6 py-3 bg-green-100 rounded-full">
             <Leaf size={20} className="text-green-700" />
-            <span className="text-green-800 font-medium">
+            <span className="text-green-800 font-medium text-sm md:text-base">
               Crafted with care for our planet
             </span>
           </div>

@@ -17,7 +17,7 @@ const GalleryBentoGrid = () => {
   return (
     <section className="py-32 px-4 relative">
       <div className="max-w-6xl mx-auto">
-        <Heading heading="Project Highlights"/>
+        <Heading heading="Project Highlights" shortDescription="This section offers a glimpse into the heart of our leather workshop where tradition meets precision. These images showcase our workspace, skilled artisans, and the meticulous processes that bring each leather product to life. From hand-stitching to finishing touches, we take pride in every step that defines the quality and character of our brand" />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 auto-rows-[200px] gap-4 transition-all duration-300">
           {imagesToShowInitially.map((img, idx) => {

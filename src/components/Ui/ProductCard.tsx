@@ -33,7 +33,7 @@ export default function ProductCard({
           className="object-contain w-full rounded-xl"
         />
         <div className="absolute bottom-0 left-0 right-0 flex items-center pl-3 rounded-b-xl bg-white opacity-100 group-hover:opacity-90 transition-opacity duration-200 ease-in-out">
-          <h3 className="text-xl md:text-2xl font-bold text-leather-brown text-left py-4 ">
+          <h3 className="text-xl lg:text-2xl font-bold text-leather-brown text-left py-4 ">
             {title}
           </h3>
         </div>

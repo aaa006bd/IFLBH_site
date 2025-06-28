@@ -40,9 +40,9 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed w-full transition-all duration-300 z-50 ${
+      className={`fixed w-full transition-all duration-300 z-40 ${
         isScrolled
-          ? "bg-white/50 backdrop-blur-lg py-2 shadow-md"
+          ? "bg-white/50 backdrop-blur-lg py-1 shadow-md"
           : "bg-black/50 py-4 md:py-1"
       }`}
     >

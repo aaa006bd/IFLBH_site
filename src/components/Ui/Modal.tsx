@@ -37,16 +37,8 @@ const Modal = ({ closeModal, modalState, product }: ModalProps) => {
           : "animate__animated animate__fadeOut"
       }`}
     >
-      <div className="w-full md:w-[80%] lg:w-[70%] xl:w-[60%] mx-auto bg-[var(--accent-secondary-color)] rounded-lg relative">
+      <div className="w-full md:w-[80%] lg:w-[70%] xl:w-[60%] mx-auto h-[80vh] overflow-auto bg-[var(--accent-secondary-color)] rounded-lg relative">
         <div className="">
-          {/* <div className="">
-            <img
-              src={product.image}
-              alt={product.title}
-              className=""
-            />
-          </div> */}
-
           {/* Text body */}
           <div className="p-6">
             {" "}
@@ -57,7 +49,7 @@ const Modal = ({ closeModal, modalState, product }: ModalProps) => {
               </h3>
               <button
                 onClick={closeModal}
-                className="text-5xl text-rose-700 rounded-full flex items-center justify-center transition-all duration-200 hover:scale-105 hover:text-rose-500 active:scale-95 cursor-pointer"
+                className="text-4xl text-rose-700 rounded-full flex items-center justify-center transition-all duration-200 hover:scale-105 hover:text-rose-500 active:scale-95 cursor-pointer"
               >
                 <IoCloseCircleOutline />
               </button>
@@ -75,12 +67,16 @@ const Modal = ({ closeModal, modalState, product }: ModalProps) => {
                     <p className="text-lg">{type.detail}</p>
                   </li>
                 ))}
-                
               </ul>
 
-              <p className="mt-2 text-gray-600">
-                Ideal For: {product.idealFor}
-              </p>
+              {product?.idealFor?.length > 0 && (
+                <p className="mt-2 text-gray-600">
+                  <span className="font-semibold text-gray-800">
+                    Ideal For :
+                  </span>{" "}
+                  {product.idealFor}
+                </p>
+              )}
             </div>
           </div>
         </div>

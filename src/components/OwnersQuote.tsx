@@ -7,46 +7,45 @@ const TeamSection = () => {
       id: 1,
       name: "Md. Salah Uddin Bahar",
       designation: "Managing Director",
-      image: "/owner section/Bahar.png",
+      image: "/owner section/Bahar.jpg",
     },
     {
       id: 2,
       name: "Md. Forhad Hossain Shohag",
-      designation: "Managing Partner",
-      image: "/owner section/Forhad.png",
+      designation: "Managing Partner (Production)",
+      image: "/owner section/Forhad.jpg",
     },
     {
       id: 3,
       name: "Shahadat Hossain Anando",
-      designation: "Managing partner(Technician)",
-      image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+      designation: "Managing partner (Technician)",
+      image: "/owner section/Anando.jpg",
     },
     {
       id: 4,
       name: "Rokibul Islam Komol",
       designation: "Finance and Admin Manager",
-      image: "/owner section/Komol.png",
+      image: "/owner section/Komol.jpg",
     },
     {
       id: 5,
-      name: "Abdur Rahaman Riyad",
+      name: "Abu Jaher",
       designation: "QC",
-      image: "/owner section/Riyad.jpg",
+      image: "/owner section/Abu.jpg",
     },
     {
       id: 6,
-      name: "Abu Jaher",
+      name: "Abdur Rahaman Riyad",
       designation: "Junior QC",
-      image: "/owner section/Abu.jpg",
+      image: "/owner section/Riyad.jpg",
     },
   ];
 
   return (
-    <section className="py-20 px-6 bg-gradient-to-b from-amber-50 to-orange-50 min-h-screen flex items-center justify-center">
+    <section className="py-20 px-6 bg-gradient-to-b from-amber-50 to-orange-50 lg:min-h-screen flex items-center justify-center">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-xl md:text-4xl font-light text-amber-900 mb-4">
+          <h2 className="text-xl md:text-4xl font-bold text-amber-900 mb-4">
             Meet the visionaries behind our legacy of premium leather
             craftsmanship
           </h2>

@@ -7,8 +7,8 @@ interface HeadingProps {
 
 const Heading = ({ heading, shortDescription }: HeadingProps) => {
   return (
-    <div className="relative text-center mb-16">
-      <h2 className="text-3xl md:text-[40px] font-bold text-stone-800 mb-5 relative inline-block underline">
+    <div className="relative text-center mb-14">
+      <h2 className="text-3xl md:text-[30px] font-bold text-stone-800 mb-3 relative inline-block underline">
         {heading}
       </h2>
       <p className="text-center text-lg text-stone-600">

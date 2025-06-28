@@ -1,11 +1,11 @@
 "use client";
-// import { useEffect } from "react";
+import { useEffect } from "react";
 import "animate.css";
 
 const HeroSection = () => {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <section
@@ -30,8 +30,7 @@ const HeroSection = () => {
             Perfection
           </h1>
           <p className="text-md md:text-lg mb-8 max-w-2xl mx-auto opacity-90 text-[var(--accent-secondary-color)] animate__animated animate__fadeIn animate__delay-1s">
-            Bangladeshs premier leather distributor, providing exceptional
-            quality for over two decades.
+            Bangladeshs premier leather distributor
           </p>
         </div>
       </div>

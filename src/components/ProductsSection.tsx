@@ -34,7 +34,7 @@ export default function ProductsSection() {
   return (
     <section
       id="products"
-      className="lg:pt-32 bg-leather-ivory min-h-[calc(100vh-80px)] flex items-center lg:w-[70%] mx-auto"
+      className="pt-32 bg-leather-ivory lg:min-h-[calc(100vh-80px)] flex items-center lg:w-[70%] mx-auto"
     >
       <div
         className="relative text-center mb-24 lg:container mx-auto px-4 md:px-6"

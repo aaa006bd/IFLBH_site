@@ -24,7 +24,7 @@ const Footer = () => {
             </h3>
             <p className="text-gray-300 mb-8 md:w-[70%] mx-auto text-lg">
               Bangladeshs premier leather distributor, providing exceptional
-              quality leather products since 2001.
+              quality leather products since 2021.
             </p>
             <div className="flex justify-center space-x-4 *:hover:bg-[#ffcba6] *:rounded-full *:w-10 *:h-10 *:flex *:items-center *:justify-center">
               <a

@@ -89,40 +89,15 @@ const Footer = () => {
           </div>
         </div>
         <hr className="my-16" />
-        <div className=" flex flex-col-reverse md:flex-row gap-16 md:gap-0 md:justify-between items-center">
+        <div className=" flex flex-col md:flex-row gap-16 md:gap-0 md:justify-between items-center">
           <p className="text-gray-300 text-sm flex items-center justify-center gap-1">
             <span className="-mb-1">©</span>{" "}
             <span>{currentYear} IFLBH. All rights reserved.</span>
           </p>
 
-          {/* <div className="">
-            <ul className="flex items-center justify-center gap-3 *:underline">
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-300 text-sm hover:text-leather-beige transition-colors"
-                >
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-300 text-sm hover:text-leather-beige transition-colors"
-                >
-                  Terms of Service
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-300 text-sm hover:text-leather-beige transition-colors"
-                >
-                  Cookie Policy
-                </a>
-              </li>
-            </ul>
-          </div> */}
+          <small className="text-gray-400 font-semibold">
+            <span className="font-thin">Powered by </span> Neural Script
+          </small>
         </div>
       </div>
     </footer>

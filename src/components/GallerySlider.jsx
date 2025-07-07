@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Heading from "./Ui/Heading";
 
 const images = Array.from(
-  { length: 27 },
+  { length: 42 },
   (_, i) => `/gallery/img${i + 1}.jpeg`
 );
 
@@ -12,7 +12,7 @@ const GalleryBentoGrid = () => {
   const [showMoreModal, setShowMoreModal] = useState(false);
 
   const imagesToShowInitially = images.slice(0, 5);
-  const remainingImages = images.slice(5);
+  const remainingImages = images;
 
   return (
     <section className="py-32 px-4 relative">
@@ -112,21 +112,38 @@ const GalleryBentoGrid = () => {
               </h3>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-              {remainingImages.map((img, idx) => (
-                <div
-                  key={idx}
-                  className="rounded-lg overflow-hidden cursor-pointer"
-                  onClick={() => setModalImage(img)}
-                >
-                  <img
-                    src={img}
-                    alt={`Gallery ${idx + 6}`}
-                    className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-                    loading="lazy"
-                  />
-                </div>
-              ))}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 auto-rows-[200px] gap-4 transition-all duration-300">
+              {remainingImages.map((img, idx) => {
+                // Alternate grid pattern based on index
+                const colSpan =
+                  idx % 6 === 0
+                    ? "md:col-span-3"
+                    : idx % 4 === 0
+                      ? "md:col-span-2"
+                      : "md:col-span-1";
+
+                const rowSpan =
+                  idx % 9 === 0
+                    ? "md:row-span-2"
+                    : idx % 5 === 0
+                      ? "md:row-span-3"
+                      : "md:row-span-1";
+
+                return (
+                  <div
+                    key={idx}
+                    onClick={() => setModalImage(img)}
+                    className={`relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300 bg-white ${colSpan} ${rowSpan}`}
+                  >
+                    <img
+                      src={img}
+                      alt={`Gallery ${idx}`}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
+                    />
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>

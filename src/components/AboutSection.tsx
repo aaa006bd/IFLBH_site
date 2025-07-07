@@ -26,7 +26,7 @@ const AboutSection = () => {
           <div className="relative h-[500px] rounded-xl shadow-xl">
             {/* Image */}
             <img
-              src="/section-images/About Us.jpg"
+              src="/section-images/About-Us.jpg"
               className="w-full h-full object-cover rounded-xl drop-shadow-2xl"
             />
 

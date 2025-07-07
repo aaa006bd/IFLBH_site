@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { Merriweather } from 'next/font/google';
+import icon from "@/public/Logo.png";
 
 const merriweather = Merriweather({
   subsets: ['latin'],
@@ -23,6 +24,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "IFLBH - Innovative Footwear & Leather House",
   description: "Producer & Exporter of Crust/Finished leather/goods ",
+  icons: {
+    icon
+  },
 };
 
 export default function RootLayout({

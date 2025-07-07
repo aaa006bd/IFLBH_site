@@ -22,7 +22,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "IFLBH - Innovative Footwear & Leather House",
+  title: "IFLBH - Innovative Footwear & Leather BD House ",
   description: "Producer & Exporter of Crust/Finished leather/goods ",
   icons: {
     icon

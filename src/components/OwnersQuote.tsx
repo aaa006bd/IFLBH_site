@@ -18,7 +18,7 @@ const TeamSection = () => {
     {
       id: 3,
       name: "Shahadat Hossain Anando",
-      designation: "Managing partner (Technician)",
+      designation: "Managing partner (Leather Technician)",
       image: "/owner section/Anando.jpg",
     },
     {

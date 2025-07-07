@@ -114,26 +114,11 @@ const GalleryBentoGrid = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 auto-rows-[200px] gap-4 transition-all duration-300">
               {remainingImages.map((img, idx) => {
-                // Alternate grid pattern based on index
-                const colSpan =
-                  idx % 6 === 0
-                    ? "md:col-span-3"
-                    : idx % 4 === 0
-                      ? "md:col-span-2"
-                      : "md:col-span-1";
-
-                const rowSpan =
-                  idx % 9 === 0
-                    ? "md:row-span-2"
-                    : idx % 5 === 0
-                      ? "md:row-span-3"
-                      : "md:row-span-1";
-
                 return (
                   <div
                     key={idx}
                     onClick={() => setModalImage(img)}
-                    className={`relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300 bg-white ${colSpan} ${rowSpan}`}
+                    className={`relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300 bg-white`}
                   >
                     <img
                       src={img}

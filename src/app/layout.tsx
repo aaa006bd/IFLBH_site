@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { Merriweather } from 'next/font/google';
-import icon from "@/public/Logo.png";
+import icon from "../../public/Logo.png";
 
 const merriweather = Merriweather({
   subsets: ['latin'],

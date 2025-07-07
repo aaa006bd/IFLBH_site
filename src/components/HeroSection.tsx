@@ -17,7 +17,7 @@ const HeroSection = () => {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-zoom-in"
           style={{
-            backgroundImage: `url('/section images/Banner.jpg')`,
+            backgroundImage: `url('/section-images/Banner.jpg')`,
           }}
         >
           {/* Overlay for better text readability */}

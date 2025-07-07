@@ -7,37 +7,37 @@ const TeamSection = () => {
       id: 1,
       name: "Md. Salah Uddin Bahar",
       designation: "Managing Director",
-      image: "/owner section/Bahar.jpg",
+      image: "/owner-section/Bahar.jpg",
     },
     {
       id: 2,
       name: "Md. Forhad Hossain Shohag",
       designation: "Managing Partner (Production)",
-      image: "/owner section/Forhad.jpg",
+      image: "/owner-section/Forhad.jpg",
     },
     {
       id: 3,
       name: "Shahadat Hossain Anando",
       designation: "Managing partner (Leather Technician)",
-      image: "/owner section/Anando.jpg",
+      image: "/owner-section/Anando.jpg",
     },
     {
       id: 4,
       name: "Rokibul Islam Komol",
       designation: "Finance and Admin Manager",
-      image: "/owner section/Komol.jpg",
+      image: "/owner-section/Komol.jpg",
     },
     {
       id: 5,
       name: "Abu Jaher",
       designation: "QC",
-      image: "/owner section/Abu.jpg",
+      image: "/owner-section/Abu.jpg",
     },
     {
       id: 6,
       name: "Abdur Rahaman Riyad",
       designation: "Junior QC",
-      image: "/owner section/Riyad.jpg",
+      image: "/owner-section/Riyad.jpg",
     },
   ];
 
